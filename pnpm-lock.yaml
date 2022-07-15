@@ -28,7 +28,7 @@ specifiers:
   vue-tsc: ^0.29.8
   windicss: ^3.5.1
   yorkie: ^2.0.0
-  zw-standard: ^1.0.4
+  zw-standard: ^1.0.5
 
 dependencies:
   '@vueuse/head': 0.7.6_vue@3.2.31
@@ -60,7 +60,7 @@ devDependencies:
   vue-tsc: 0.29.8_typescript@4.6.2
   windicss: 3.5.1
   yorkie: 2.0.0
-  zw-standard: 1.0.4_5a77b99bda8b2b38b55939b7a1542a28
+  zw-standard: 1.0.5_5a77b99bda8b2b38b55939b7a1542a28
 
 packages:
 
@@ -752,14 +752,6 @@ packages:
       - supports-color
     dev: true
 
-  /acorn-jsx/5.3.2_acorn@8.7.0:
-    resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==, registry: http://registry.npm.taobao.org/, tarball: http://registry.npm.taobao.org/acorn-jsx/-/acorn-jsx-5.3.2.tgz}
-    peerDependencies:
-      acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
-    dependencies:
-      acorn: 8.7.0
-    dev: true
-
   /acorn-jsx/5.3.2_acorn@8.7.1:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==, registry: http://registry.npm.taobao.org/, tarball: http://registry.npm.taobao.org/acorn-jsx/-/acorn-jsx-5.3.2.tgz}
     peerDependencies:
@@ -770,12 +762,6 @@ packages:
 
   /acorn/7.4.1:
     resolution: {integrity: sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==, registry: http://registry.npm.taobao.org/, tarball: http://registry.npm.taobao.org/acorn/-/acorn-7.4.1.tgz}
-    engines: {node: '>=0.4.0'}
-    hasBin: true
-    dev: true
-
-  /acorn/8.7.0:
-    resolution: {integrity: sha512-V/LGr1APy+PXIwKebEWrkZPwoeoF+w1jiOBUmuxuiUIaOHtob8Qc9BTrYo7VuI5fR8tqsy+buA2WFooR5olqvQ==, registry: http://registry.npm.taobao.org/, tarball: http://registry.npm.taobao.org/acorn/-/acorn-8.7.0.tgz}
     engines: {node: '>=0.4.0'}
     hasBin: true
     dev: true
@@ -1699,7 +1685,7 @@ packages:
     peerDependencies:
       eslint: '>=8.8.0'
     dependencies:
-      '@babel/helper-validator-identifier': 7.16.7
+      '@babel/helper-validator-identifier': 7.18.6
       ci-info: 3.3.2
       clean-regexp: 1.0.0
       eslint: 8.19.0
@@ -1839,15 +1825,6 @@ packages:
       v8-compile-cache: 2.3.0
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /espree/9.3.1:
-    resolution: {integrity: sha512-bvdyLmJMfwkV3NCRl5ZhJf22zBFo1y8bYh3VYb+bfzqNB4Je68P2sSuXyuFquzWLebHpNd2/d5uv7yoP9ISnGQ==, registry: http://registry.npm.taobao.org/, tarball: http://registry.npm.taobao.org/espree/-/espree-9.3.1.tgz}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    dependencies:
-      acorn: 8.7.0
-      acorn-jsx: 5.3.2_acorn@8.7.0
-      eslint-visitor-keys: 3.3.0
     dev: true
 
   /espree/9.3.2:
@@ -2442,10 +2419,10 @@ packages:
     resolution: {integrity: sha512-qCRJWlbP2v6HbmKW7R3lFbeiVWHo+oMJ0j+MizwvauqnCV/EvtAeEeuCgoc/ErtsuoKgYB8U4Ih8AxJbXoE6/g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
-      acorn: 8.7.0
+      acorn: 8.7.1
       eslint-visitor-keys: 3.3.0
-      espree: 9.3.1
-      semver: 7.3.5
+      espree: 9.3.2
+      semver: 7.3.7
     dev: true
 
   /jsonc-parser/2.3.1:
@@ -4085,8 +4062,8 @@ packages:
       strip-indent: 2.0.0
     dev: true
 
-  /zw-standard/1.0.4_5a77b99bda8b2b38b55939b7a1542a28:
-    resolution: {integrity: sha512-MdNdgfH9X1yuSgf2F52rfjjgfCFoHNJD+J4OScRq0x0mr918JoQx3Ipk6k3baXhGywrt8UjlXUOMBm8QX/B2sQ==}
+  /zw-standard/1.0.5_5a77b99bda8b2b38b55939b7a1542a28:
+    resolution: {integrity: sha512-aLIYy/m8zkbIWO6BuixdXGv2nboavEY6ZcNLTDES5MRYGpo3fBLpZIrzYdOKmCZj4j8bHQ6y6X6jcJDHSFACvA==}
     peerDependencies:
       eslint: '>=7.4.0'
       lint-staged: ^11.1.1
