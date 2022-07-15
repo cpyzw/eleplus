@@ -28,7 +28,7 @@ specifiers:
   vue-tsc: ^0.29.8
   windicss: ^3.5.1
   yorkie: ^2.0.0
-  zw-standard: ^1.0.5
+  zw-standard: ^1.1.1
 
 dependencies:
   '@vueuse/head': 0.7.6_vue@3.2.31
@@ -60,7 +60,7 @@ devDependencies:
   vue-tsc: 0.29.8_typescript@4.6.2
   windicss: 3.5.1
   yorkie: 2.0.0
-  zw-standard: 1.0.5_5a77b99bda8b2b38b55939b7a1542a28
+  zw-standard: 1.1.1_5a77b99bda8b2b38b55939b7a1542a28
 
 packages:
 
@@ -4062,8 +4062,8 @@ packages:
       strip-indent: 2.0.0
     dev: true
 
-  /zw-standard/1.0.5_5a77b99bda8b2b38b55939b7a1542a28:
-    resolution: {integrity: sha512-aLIYy/m8zkbIWO6BuixdXGv2nboavEY6ZcNLTDES5MRYGpo3fBLpZIrzYdOKmCZj4j8bHQ6y6X6jcJDHSFACvA==}
+  /zw-standard/1.1.1_5a77b99bda8b2b38b55939b7a1542a28:
+    resolution: {integrity: sha512-c4dptRmvBITF56YQsTl+7P7JX/GO9xsE/PF+9sOkfzPPvtSB85NnDyjF1KmDKUMCqY7ENG9dBG1z2YHX656y9A==}
     peerDependencies:
       eslint: '>=7.4.0'
       lint-staged: ^11.1.1
