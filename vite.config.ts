@@ -17,7 +17,8 @@ const plugins: (PluginOption | PluginOption[])[] = [
     resolvers: [IconsResolver({ componentPrefix: "" })],
   }),
   AutoImport({
-    imports: ["vue"],
+    imports: ["vue", "vue-router", "@vueuse/head"],
+    dts: "src/auto-import.d.ts",
   }),
   Icons(),
   WindiCSS(),

@@ -1,6 +1,5 @@
 import type { RouteRecordRaw } from "vue-router";
-import HelloWorld from "../view/HelloWorld.vue";
 const defaultRoutes: Array<RouteRecordRaw> = [
-  { path: "/", component: HelloWorld },
+  { path: "/login", component: () => import('@/view/login/index.vue') },
 ];
 export default defaultRoutes;
