@@ -1,1 +1,0 @@
-import{o as r,h as c}from"./vendor.8d8dfa51.js";var a=(e,t)=>{const _=e.__vccOpts||e;for(const[n,o]of t)_[n]=o;return _};const s={},d={class:"login-container"};function i(e,t){return r(),c("div",d)}var v=a(s,[["render",i],["__scopeId","data-v-42334905"]]);export{v as default};
