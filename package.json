@@ -18,6 +18,7 @@
     "vue": "^3.2.25",
     "vue-router": "^4.0.14"
   },
+  "homepage": "https://github.com/yzwBeat/eleplus#readme",
   "devDependencies": {
     "@types/node": "^17.0.21",
     "@typescript-eslint/eslint-plugin": "^5.16.0",
@@ -47,7 +48,7 @@
   },
   "lint-staged": {
     "*.{js,jsx,vue,ts,tsx}": [
-      "eslint --config=.eslintrc.js"
+      "eslint src --config=.eslintrc.js"
     ]
   }
 }
