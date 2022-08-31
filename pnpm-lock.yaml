@@ -5,6 +5,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.16.0
   '@typescript-eslint/parser': ^5.16.0
   '@vitejs/plugin-vue': ^2.2.0
+  '@vueuse/core': ^9.1.1
   '@vueuse/head': ^0.7.6
   axios: ^0.26.1
   element-plus: ^2.2.6
@@ -32,6 +33,7 @@ specifiers:
   zw-standard: ^1.1.1
 
 dependencies:
+  '@vueuse/core': 9.1.1_vue@3.2.31
   '@vueuse/head': 0.7.6_vue@3.2.31
   axios: 0.26.1
   element-plus: 2.2.6_vue@3.2.31
@@ -54,7 +56,7 @@ devDependencies:
   prettier: 2.6.2
   sass: 1.53.0
   typescript: 4.6.2
-  unplugin-auto-import: 0.6.6_vite@2.8.6
+  unplugin-auto-import: 0.6.6_@vueuse+core@9.1.1+vite@2.8.6
   unplugin-icons: 0.14.0_vite@2.8.6
   unplugin-vue-components: 0.18.3_vite@2.8.6+vue@3.2.31
   vite: 2.8.6_sass@1.53.0
@@ -273,6 +275,9 @@ packages:
   /@types/web-bluetooth/0.0.14:
     resolution: {integrity: sha512-5d2RhCard1nQUC3aHcq/gHzWYO6K0WJmAbjO7mQJgCQKtZpgXxv1rOM6O/dBDhDYYVutk1sciOgNSe+5YyfM8A==}
     dev: false
+
+  /@types/web-bluetooth/0.0.15:
+    resolution: {integrity: sha512-w7hEHXnPMEZ+4nGKl/KDRVpxkwYxYExuHOYXyzIzCDzEZ9ZCGMAewulr9IqJu2LR4N37fcnb1XVeuZ09qgOxhA==}
 
   /@typescript-eslint/eslint-plugin/5.16.0_b0a3d6e0d825ae659b48c2168ee451fe:
     resolution: {integrity: sha512-SJoba1edXvQRMmNI505Uo4XmGbxCK9ARQpkvOd00anxzri9RNQk0DDCxD+LIl+jYhkzOJiOMMKYEHnHEODjdCw==, registry: http://registry.npm.taobao.org/, tarball: http://registry.npm.taobao.org/@typescript-eslint/eslint-plugin/-/eslint-plugin-5.16.0.tgz}
@@ -692,6 +697,17 @@ packages:
       vue-demi: 0.12.4_vue@3.2.31
     dev: false
 
+  /@vueuse/core/9.1.1_vue@3.2.31:
+    resolution: {integrity: sha512-QfuaNWRDMQcCUwXylCyYhPC3ScS9Tiiz4J0chdwr3vOemBwRToSywq8MP+ZegKYFnbETzRY8G/5zC+ca30wrRQ==}
+    dependencies:
+      '@types/web-bluetooth': 0.0.15
+      '@vueuse/metadata': 9.1.1
+      '@vueuse/shared': 9.1.1_vue@3.2.31
+      vue-demi: 0.12.4_vue@3.2.31
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
+
   /@vueuse/head/0.7.6_vue@3.2.31:
     resolution: {integrity: sha512-cOWqCkT3WiF5oEpw+VVEWUJd9RLD5rc7DmnFp3cePsejp+t7686uKD9Z9ZU7Twb7R/BI8iexKTmXo9D/F3v6UA==}
     peerDependencies:
@@ -703,6 +719,9 @@ packages:
   /@vueuse/metadata/8.7.5:
     resolution: {integrity: sha512-emJZKRQSaEnVqmlu39NpNp8iaW+bPC2kWykWoWOZMSlO/0QVEmO/rt8A5VhOEJTKLX3vwTevqbiRy9WJRwVOQg==}
     dev: false
+
+  /@vueuse/metadata/9.1.1:
+    resolution: {integrity: sha512-XZ2KtSW+85LLHB/IdGILPAtbIVHasPsAW7aqz3BRMzJdAQWRiM/FGa1OKBwLbXtUw/AmjKYFlZJo7eOFIBXRog==}
 
   /@vueuse/shared/8.7.5_vue@3.2.31:
     resolution: {integrity: sha512-THXPvMBFmg6Gf6AwRn/EdTh2mhqwjGsB2Yfp374LNQSQVKRHtnJ0I42bsZTn7nuEliBxqUrGQm/lN6qUHmhJLw==}
@@ -718,6 +737,14 @@ packages:
       vue: 3.2.31
       vue-demi: 0.12.4_vue@3.2.31
     dev: false
+
+  /@vueuse/shared/9.1.1_vue@3.2.31:
+    resolution: {integrity: sha512-c+IfcOYmHiHqoEa3ED1Tbpue5GHmoUmTp8PtO4YbczthtY155Rt6DmWhjxMLXBF1Bcidagxljmp/7xtAzEHXLw==}
+    dependencies:
+      vue-demi: 0.12.4_vue@3.2.31
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
 
   /@windicss/config/1.8.3:
     resolution: {integrity: sha512-1fvfZhRD7WfV/Xh6uIAYKIdbQWrwEgSdkFlHiLPzMDS44KjwNZILDzLAz9Y2W5H2K4MLGgGMnzGS89ECyjc0Ww==, registry: http://registry.npm.taobao.org/, tarball: http://registry.npm.taobao.org/@windicss/config/-/config-1.8.3.tgz}
@@ -3604,7 +3631,7 @@ packages:
       '@types/unist': 2.0.6
     dev: true
 
-  /unplugin-auto-import/0.6.6_vite@2.8.6:
+  /unplugin-auto-import/0.6.6_@vueuse+core@9.1.1+vite@2.8.6:
     resolution: {integrity: sha512-x3YxAI9ePoumXOakuS5YJlFkSyAkl5vJlaFZSJhSp75nH5gg8LpqQ/0Gz1/CG/JRRv+xaE1CZpEV161AqFGjEg==, registry: http://registry.npm.taobao.org/, tarball: http://registry.npm.taobao.org/unplugin-auto-import/-/unplugin-auto-import-0.6.6.tgz}
     engines: {node: '>=14'}
     peerDependencies:
@@ -3615,6 +3642,7 @@ packages:
     dependencies:
       '@antfu/utils': 0.5.0
       '@rollup/pluginutils': 4.2.0
+      '@vueuse/core': 9.1.1_vue@3.2.31
       local-pkg: 0.4.1
       magic-string: 0.26.1
       resolve: 1.22.0
@@ -3925,7 +3953,7 @@ packages:
     dev: true
 
   /vue-demi/0.12.4_vue@3.2.31:
-    resolution: {integrity: sha512-ztPDkFt0TSUdoq1ZI6oD730vgztBkiByhUW7L1cOTebiSBqSYfSQgnhYakYigBkyAybqCTH7h44yZuDJf2xILQ==, registry: http://registry.npm.taobao.org/, tarball: http://registry.npm.taobao.org/vue-demi/-/vue-demi-0.12.4.tgz}
+    resolution: {integrity: sha512-ztPDkFt0TSUdoq1ZI6oD730vgztBkiByhUW7L1cOTebiSBqSYfSQgnhYakYigBkyAybqCTH7h44yZuDJf2xILQ==}
     engines: {node: '>=12'}
     hasBin: true
     requiresBuild: true
@@ -3937,7 +3965,6 @@ packages:
         optional: true
     dependencies:
       vue: 3.2.31
-    dev: false
 
   /vue-eslint-parser/9.0.3_eslint@8.19.0:
     resolution: {integrity: sha512-yL+ZDb+9T0ELG4VIFo/2anAOz8SvBdlqEnQnvJ3M7Scq56DvtjY0VY88bByRZB0D4J0u8olBcfrXTVONXsh4og==}
