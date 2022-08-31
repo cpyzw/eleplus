@@ -1,21 +1,21 @@
-import { defineStore } from "pinia";
+import { defineStore } from 'pinia'
 
 interface User {
-  token: string;
-  name?: string;
+  token: string
+  name?: string
 }
-export const userStateStore = defineStore("user", {
+export const userStateStore = defineStore('user', {
   state: (): User => ({
-    token: "",
+    token: '',
   }),
   getters: {
     getToken(state) {
-      return state.token;
+      return state.token
     },
   },
   actions: {
     setToken(token: string) {
-      this.token = token;
+      this.token = token
     },
   },
-});
+})
