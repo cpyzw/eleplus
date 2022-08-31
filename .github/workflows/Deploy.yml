@@ -19,6 +19,6 @@ jobs:
       - run: pnpm install
       - run: pnpm build
       - name: Deploy
-          uses: JamesIves/github-pages-deploy-action@v4
-          with:
-            folder: dist
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist
