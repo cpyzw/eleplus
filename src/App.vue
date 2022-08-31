@@ -4,9 +4,9 @@
 
 <script setup lang="ts">
 useHead({
-  title: "智慧案场 - nexhome",
-  meta: [{ name: "description", content: "智慧案场" }],
-});
+  title: 'zw-admin',
+  meta: [{ name: 'description', content: 'admin' }],
+})
 </script>
 
 <style></style>
