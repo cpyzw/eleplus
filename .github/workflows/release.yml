@@ -29,4 +29,4 @@ jobs:
     - run: pnpm install
     - run: pnpm build
       env:
-        CONVENTIONAL_GITHUB_RELEASER_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
